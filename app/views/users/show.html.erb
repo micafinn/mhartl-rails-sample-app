@@ -1,6 +1,11 @@
-<p><strong>User name : <%= @user.name %></strong></p>
+<% provide(:title, @user.name) %>
+<h1>
+  <%= gravatar_for @user %><br>
+  <%= @user.name %>
+</h1>
 
-<p><em>Email : <%= @user.email %>  </em></p>
+
+<!-- <p><em>Email : <%= @user.email %>  </em></p>
 
 <p>
   Updated at : <%= @user.created_at %><br>
@@ -10,4 +15,4 @@
 </p>
 <p>
   Requested at: <%= Time.now %><br>
-</p>
+</p> -->
