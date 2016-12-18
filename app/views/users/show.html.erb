@@ -1,1 +1,13 @@
-<%= @user.name %>, <%= @user.email %>
+<p><strong>User name : <%= @user.name %></strong></p>
+
+<p><em>Email : <%= @user.email %>  </em></p>
+
+<p>
+  Updated at : <%= @user.created_at %><br>
+</p>
+<p>
+  Created at : <%= @user.updated_at %><br>
+</p>
+<p>
+  Requested at: <%= Time.now %><br>
+</p>
