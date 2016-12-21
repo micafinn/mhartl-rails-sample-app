@@ -1,18 +1,11 @@
 <% provide(:title, @user.name) %>
-<h1>
-  <%= gravatar_for @user %><br>
-  <%= @user.name %>
-</h1>
-
-
-<!-- <p><em>Email : <%= @user.email %>  </em></p>
-
-<p>
-  Updated at : <%= @user.created_at %><br>
-</p>
-<p>
-  Created at : <%= @user.updated_at %><br>
-</p>
-<p>
-  Requested at: <%= Time.now %><br>
-</p> -->
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
