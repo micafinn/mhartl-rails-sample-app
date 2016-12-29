@@ -2,7 +2,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-
   end
 
   def new
@@ -30,6 +29,7 @@ class UsersController < ApplicationController
       #Handle a successful update_update.
     else
       render 'edit'
+    end
   end
 
   private
